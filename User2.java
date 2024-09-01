@@ -48,7 +48,7 @@ public class User2 implements Runnable,ActionListener {    //Socket
 		send.addActionListener(this);
 		
 		try {
-			socket = new Socket("192.168.74.106",1010);
+			socket = new Socket("localhost",1010);
 			
 			inputStream = new DataInputStream(socket.getInputStream());
 			outputStream = new DataOutputStream(socket.getOutputStream());
